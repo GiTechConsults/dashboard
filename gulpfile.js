@@ -9,11 +9,11 @@ var Paths = {
   HERE: './',
   DIST: 'dist/',
   CSS: './assets/css/',
-  SCSS_TOOLKIT_SOURCES: './assets/scss/now-ui-dashboard.scss',
+  SCSS_TOOLKIT_SOURCES: './assets/scss/dashboard.scss',
   SCSS: './assets/scss/**/**'
 };
 
-gulp.task('compile-scss', function() {
+gulp.task('compile-scss', function () {
   return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -22,11 +22,11 @@ gulp.task('compile-scss', function() {
     .pipe(gulp.dest(Paths.CSS));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(Paths.SCSS, ['compile-scss']);
 });
 
-gulp.task('open', function() {
+gulp.task('open', function () {
   gulp.src('examples/dashboard.html')
     .pipe(open());
 });
