@@ -1,6 +1,6 @@
 demo = {
-  initPickColor: function() {
-    $('.pick-class-label').click(function() {
+  initPickColor: function () {
+    $('.pick-class-label').click(function () {
       var new_class = $(this).attr('new-class');
       var old_class = $('#display-buttons').attr('data-class');
       var display_div = $('#display-buttons');
@@ -13,7 +13,7 @@ demo = {
     });
   },
 
-  initDocChart: function() {
+  initDocChart: function () {
     chartColor = "#FFFFFF";
 
     // General configuration for the charts with Line gradientStroke
@@ -104,7 +104,7 @@ demo = {
     });
   },
 
-  initDashboardPageCharts: function() {
+  initDashboardPageCharts: function () {
 
     chartColor = "#FFFFFF";
 
@@ -444,7 +444,7 @@ demo = {
     var viewsChart = new Chart(e, a);
   },
 
-  initGoogleMaps: function() {
+  initGoogleMaps: function () {
     var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
     var mapOptions = {
       zoom: 13,
