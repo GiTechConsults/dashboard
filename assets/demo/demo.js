@@ -209,7 +209,7 @@ demo = {
       }
     };
 
-    var ctx = document.getElementById('bigDashboardChart').getContext("2d");
+    var ctx = document.getElementById('barChartSimpleGradientsNumbers').getContext("2d");
 
     var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
     gradientStroke.addColorStop(0, '#80b6f4');
@@ -369,29 +369,28 @@ demo = {
       options: gradientChartOptionsConfigurationWithNumbersAndGrid
     });
 
-    var e = document.getElementById("barChartSimpleGradientsNumbers").getContext("2d");
+    var e = document.getElementById("bigDashboardChart").getContext("2d");
 
     gradientFill = ctx.createLinearGradient(0, 170, 0, 50);
-    gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-    gradientFill.addColorStop(1, hexToRGB('#2CA8FF', 0.6));
+    gradientFill.addColorStop(1, hexToRGB('#ffffff', 0.7));
 
     var a = {
       type: "bar",
       data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        labels: ["Adavi", "Ajaokuta", "Ankpa", "Bassa", "Dekina", "Ibaji", "Idah", "Igalamela-Odolu", "Ijumu", "Kabba/Bunu", "Koton Karfe", "Lokoja", "Mopa-Muro", "Ofu", "Ogori-Magongo", "Okehi", "Okene", "Olamaboro", "Omala", "Yagba East", "Yagba West"],
         datasets: [{
-          label: "Active Countries",
+          label: "Males",
           backgroundColor: gradientFill,
-          borderColor: "#2CA8FF",
+          borderColor: "#000",
           pointBorderColor: "#FFF",
-          pointBackgroundColor: "#2CA8FF",
+          pointBackgroundColor: "#ffffff",
           pointBorderWidth: 2,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 1,
           pointRadius: 4,
           fill: true,
           borderWidth: 1,
-          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155]
+          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155, 100, 45, 70, 50, 100, 80, 65, 78, 30, 130]
         }]
       },
       options: {
