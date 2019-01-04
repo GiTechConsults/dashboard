@@ -17,7 +17,8 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/dashboard.css?v=1.2.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose -->
-  <link href="assets/graph/graph.css" rel="stylesheet" />
+  <link href="assets/demo-graph/graph.css" rel="stylesheet" />
+  
 </head>
 
 <body class="">
@@ -76,8 +77,10 @@
 
 
 
-  <div class="panel-header panel-header-lg">
-    <canvas id="bigDashboardChart"></canvas>
+  <div class="">
+    <div style="width: 100%">
+      <canvas id="canvas"></canvas>
+    </div>
   </div>
   <div class="content">
     <div class="row">
@@ -358,16 +361,18 @@
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!-- Chart JS -->
-  <script src="assets/js/plugins/chartjs.min.js"></script>
+  <script src="assets/bar-chart/chart.bundle.js"></script>
+  <script src="assets/bar-chart/utils.js"></script>
+	<script src="assets/bar-chart/chart-graph.js"></script>
   <!--  Notifications Plugin    -->
   <script src="assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/dashboard.min.js?v=1.2.0" type="text/javascript"></script>
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
-  <script src="assets/graph/graph.js"></script>
+  <script src="assets/demo-graph/graph.js"></script>
   <script>
     $(document).ready(function () {
-      // Javascript method's body can be found in assets/graph/graph.js
+      // Javascript method's body can be found in assets/demo-graph/graph.js
       demo.initDashboardPageCharts();
 
     });
