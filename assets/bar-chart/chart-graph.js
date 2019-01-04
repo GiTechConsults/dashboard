@@ -19,7 +19,7 @@ window.onload = function () {
         options: {
             title: {
                 display: true,
-                text: 'Chart.js Bar Chart - Stacked'
+                text: 'YESSO STATISTICS'
             },
             tooltips: {
                 mode: 'index',
